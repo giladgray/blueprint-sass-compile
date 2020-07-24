@@ -38,6 +38,7 @@ $pt-line-height: 4 / 3;
 
 //
 // Blueprint component vars
+// These must be looked up in
 //
 $card-padding: $g * 3;
 
@@ -47,11 +48,10 @@ $menu-item-line-height: $pt-grid-size * 2;
 
 
 ### `vendor.scss`
-In your root Sass file, import your overrides file _before_ importing Blueprint source files. Then import all packages from `src/`.
+In your root Sass file, import your overrides file _before_ importing Blueprint source files. Then import all packages from `src/`. This will produce a single `vendor.css` file that contains all the compiled Blueprint styles in one file, from all four libraries below.
 
-For performance reasons, it can be nice to split your external stylesheets to a separate `vendor.scss` because these will likely change much less frequently than your application styles.
+> For performance reasons, it can be nice to split your external stylesheets to a separate `vendor.scss` because these will likely change much less frequently than your application styles.
 
-This will produce a single `vendor.css` file that contains all the compiled Blueprint styles in one file, from all four libraries below.
 
 ```scss
 // import your overrides first
@@ -83,3 +83,10 @@ Wrote Source Map to /src/styles/vendor.css.map
 Wrote 2 CSS files to /src/styles
 ✨  Done in 2.82s.
 ```
+
+## availabe Sass `$variables`
+
+- Blueprint `$pt-variables`: https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_variables.scss
+- Blueprint colors `$blue3`, etc: https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_colors.scss
+- Blueprint color aliases `$pt-intent-primary`, etc: https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_color-aliases.scss
+- Component variables (non `$pt-*` but still editable this way) must be looked up in component source code. They are typically defined in a component's main or `_common.scss` file: https://github.com/search?l=&q=repo%3Apalantir%2Fblueprint+filename%3A_common.scss&type=Code
