@@ -2,7 +2,7 @@
   "name": "blueprint-sass-compile",
   "version": "1.0.0",
   "description": "compile blueprint.scss from source",
-  "main": "index.js",
+  "bin": "./build-css.sh",
   "repository": "git@github.com:giladgray/blueprint-sass-compile.git",
   "author": "Gilad Gray <giladgray@gmail.com>",
   "license": "MIT",
