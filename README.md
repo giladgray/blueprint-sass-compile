@@ -20,6 +20,8 @@ yarn install --dev blueprint-sass-compile
 
 ### `_blueprint_variables.scss`
 Make a file to hold all your Blueprint variable overrides. Be sure to import this first thing in your main Sass file.
+
+What variables are available? [See below](#availabe-sass-variables) for links to source code, the ultimate source of truth.
 ```scss
 @import '~@blueprintjs/core/lib/scss/variables';
 
@@ -38,7 +40,6 @@ $pt-line-height: 4 / 3;
 
 //
 // Blueprint component vars
-// These must be looked up in
 //
 $card-padding: $g * 3;
 
