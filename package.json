@@ -1,0 +1,15 @@
+{
+  "name": "blueprint-sass-compile",
+  "version": "1.0.0",
+  "description": "compile blueprint.scss from source",
+  "main": "index.js",
+  "repository": "git@github.com:giladgray/blueprint-sass-compile.git",
+  "author": "Gilad Gray <giladgray@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "node-sass-chokidar": "^1.5.0",
+    "node-sass-package-importer": "^5.3.2",
+    "sass-inline-svg": "^1.2.3"
+  }
+}
