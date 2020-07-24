@@ -9,6 +9,7 @@ yarn install --dev blueprint-sass-compile
 ```
 
 ### `package.json`
+
 ```json
 {
   "scripts": {
@@ -19,9 +20,11 @@ yarn install --dev blueprint-sass-compile
 ```
 
 ### `_blueprint_variables.scss`
+
 Make a file to hold all your Blueprint variable overrides. Be sure to import this first thing in your main Sass file.
 
 What variables are available? [See below](#availabe-sass-variables) for links to source code, the ultimate source of truth.
+
 ```scss
 @import '~@blueprintjs/core/lib/scss/variables';
 
@@ -49,10 +52,10 @@ $menu-item-line-height: $pt-grid-size * 2;
 
 
 ### `vendor.scss`
+
 In your root Sass file, import your overrides file _before_ importing Blueprint source files. Then import all packages from `src/`. This will produce a single `vendor.css` file that contains all the compiled Blueprint styles in one file, from all four libraries below.
 
 > For performance reasons, it can be nice to split your external stylesheets to a separate `vendor.scss` because these will likely change much less frequently than your application styles.
-
 
 ```scss
 // import your overrides first
