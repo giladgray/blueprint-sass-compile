@@ -1,6 +1,6 @@
 # blueprint-sass-compile
 
-a handy little package to compile blueprint.scss from source
+a handy little package to compile `blueprint.scss` from source.
 
 ## usage
 
@@ -30,9 +30,7 @@ What variables are available? [See below](#availabe-sass-variables) for links to
 
 $g: 4px;
 
-//
-// Blueprint public vars
-//
+/* Blueprint public vars */
 $pt-grid-size: $g * 2;
 $pt-border-radius: $g;
 
@@ -41,9 +39,7 @@ $pt-font-size-large: $pt-font-size + 1px;
 $pt-font-size-small: $pt-font-size - 1px;
 $pt-line-height: 4 / 3;
 
-//
-// Blueprint component vars
-//
+/* Blueprint component vars */
 $card-padding: $g * 3;
 
 $menu-item-border-radius: $pt-border-radius;
@@ -88,7 +84,7 @@ Wrote 2 CSS files to /src/styles
 ✨  Done in 2.82s.
 ```
 
-## availabe Sass `$variables`
+## available Sass `$variables`
 
 - Blueprint `$pt-variables`: https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_variables.scss
 - Blueprint colors `$blue3`, etc: https://github.com/palantir/blueprint/blob/develop/packages/core/src/common/_colors.scss
